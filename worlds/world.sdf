@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
-<sdf version="1.8">
-  <world name='default'>
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="turtlebot3_world">
     <physics type="ode">
       <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -83,7 +83,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>1 1</size>
             </plane>
           </geometry>
           <surface>
@@ -144,16 +144,16 @@
         <falloff>0</falloff>
       </spot>
     </light>
+    
+    
     <include>
-      <pose>1.4 1.0 0.1 0 0 1.57</pose>
+      <pose>0 -0.7 0.04 0 0 0</pose>
       <uri>model://robot_description/robot_model/robot.sdf</uri>
-    </include>
+    </include> 
+ 
+    <scene>
+      <shadows>false</shadows>
+    </scene>
 
-
-    <!-- <joint name="race_track_to_car" type="fixed">
-      <parent>ackermann_r2_car::base_link</parent>
-      <child>race_track::race_track_link</child>
-      <pose>0 0 0 0 0 0</pose>
-    </joint> -->
   </world>
 </sdf>
