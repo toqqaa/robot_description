@@ -22,7 +22,7 @@ def generate_launch_description():
 
 
     # Load the SDF file from "description" package
-    sdf_file  =  os.path.join(pkg_project_description, 'robot_model', 'robot.sdf')
+    sdf_file  =  os.path.join(pkg_project_description, 'models', 'robot.sdf')
     with open(sdf_file, 'r') as infp:
         robot_desc = infp.read()
 
