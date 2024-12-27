@@ -310,7 +310,7 @@
             <resolution>0.01</resolution>
           </range>
         </lidar>
-        <frame_id>lidar_link</frame_id>
+        <gz_frame_id>lidar_link</gz_frame_id>
         <topic>scan</topic>
         <alwaysOn>1</alwaysOn>
         <visualize>true</visualize>
