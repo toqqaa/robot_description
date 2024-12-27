@@ -79,6 +79,8 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
+              <pose relative_to='front_right_wheel_joint'>0 0 0 0 0 0</pose>
+
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -117,6 +119,8 @@
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
+          <pose relative_to='rear_right_wheel_joint'>0 0 0 0 0 0</pose>
+
       <inertial>
         <pose>5.91746743994204E-07 0.00865068531718727 4.89179091955894E-08 0 0 0</pose>
         <mass>0.260404298477464</mass>
@@ -155,6 +159,8 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
+              <pose relative_to='front_left_wheel'>0 0 0 0 0 0</pose>
+
       <inertial>
         <pose>-5.43240281369872E-07 -0.0088383378086567 2.3961098227776E-07 0 0 0</pose>
         <mass>0.260404298193649</mass>
@@ -193,6 +199,8 @@
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
+      <pose relative_to='rear_left_wheel_joint'>0 0 0 0 0 0</pose>
+
       <inertial>
         <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
         <mass>0.260404298330934</mass>
