@@ -25,7 +25,7 @@ install(
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 install(
   DIRECTORY
-  robot_model/
+  models/
   DESTINATION share/${PROJECT_NAME}/models
 )
 install(
