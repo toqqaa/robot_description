@@ -208,6 +208,8 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
+        <position>1.0</position>
+
       </limit>
     </joint>
 
@@ -223,6 +225,8 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
+        <position>1.0</position>
+
       </limit>
     </joint>
 
@@ -238,6 +242,7 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
+        <position>1.0</position>
       </limit>
     </joint>
 
@@ -253,6 +258,8 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
+        <position>1.0</position>
+
       </limit>
     </joint>
 
@@ -260,7 +267,7 @@
 
 <link name='lidar_link'>
       <inertial>
-        <pose>0.23529 0 0.1 0 0 0</pose>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
         <mass>0.2</mass>
         <inertia>
           <ixx>0.0002</ixx>
@@ -272,7 +279,7 @@
         </inertia>
       </inertial>
       <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
-        <pose>0.23529 0 0.1 0 0 0</pose>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -294,7 +301,7 @@
         </geometry>
       </collision>
       <sensor name="lidar" type="gpu_lidar">
-        <pose>0.23529 0 0.1 0 0 0</pose>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
         <lidar>
           <scan>
             <horizontal>
@@ -310,16 +317,16 @@
             <resolution>0.01</resolution>
           </range>
         </lidar>
-        <gz_frame_id>lidar_link</gz_frame_id>
-        <topic>scan</topic>
-        <alwaysOn>1</alwaysOn>
+        <frame_id>lidar_link</frame_id>
+        <topic>/scan</topic>
+        <always_on>1</always_on>
         <visualize>true</visualize>
         <update_rate>10</update_rate>
       </sensor>
     </link>
 
     <joint name='base_to_lidar_joint' type='fixed'>
-      <pose>0.23529 0 0.1 0 0 0</pose>
+      <pose>0.23529 0 0.085747 0 0 0</pose>
       <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
