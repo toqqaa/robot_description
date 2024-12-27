@@ -17,7 +17,7 @@ def generate_launch_description():
 
     # Setup project paths
     pkg_project_description = get_package_share_directory('robot_description')
-    pkg_ros_gz_sim = get_package_share_directory('gz_bridge')
+    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
 
 
