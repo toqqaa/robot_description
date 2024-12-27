@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.11'>
+  <model name='Rahal_robot'>
+    <!-- Base Link -->
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.00133744334022522 6.05357174165988E-07 -0.000970131886296771 0 0 0</pose>
+        <mass>1.1439176852714</mass>
+        <inertia>
+          <ixx>0.446134400302526</ixx>
+          <ixy>-2.18000480348373E-05</ixy>
+          <ixz>0.0113470100455749</ixz>
+          <iyy>0.985173237691484</iyy>
+          <iyz>2.52721045797753E-06</iyz>
+          <izz>1.332699788346</izz>
+        </inertia>
+      </inertial>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+        </material>
+      </visual>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Upper Link -->
+    <link name='upper_Link'>
+      <inertial>
+        <pose>-0.0774751291643895 2.86227406331996E-06 0.156846795584232 0 0 0</pose>
+        <mass>0.166872826924751</mass>
+        <inertia>
+          <ixx>0.000489929792443678</ixx>
+          <ixy>-7.74903089672872E-18</ixy>
+          <ixz>2.30455917227275E-21</ixz>
+          <iyy>0.00269350489980573</iyy>
+          <iyz>1.16991430571828E-20</iyz>
+          <izz>0.00318332344369813</izz>
+        </inertia>
+      </inertial>
+      <visual name='upper_Link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/upper_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <collision name='upper_Link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/upper_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Front Right Wheel -->
+    <link name='front_right_wheel'>
+      <inertial>
+        <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
+        <mass>0.260404298470105</mass>
+        <inertia>
+          <ixx>0.000768916188073183</ixx>
+          <ixy>-3.91608887242284E-09</ixy>
+          <ixz>-1.86122419709981E-08</ixz>
+          <iyy>0.00137090251737553</iyy>
+          <iyz>-4.72596045124545E-10</iyz>
+          <izz>0.000769014346730516</izz>
+        </inertia>
+      </inertial>
+      <visual name='front_right_wheel_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/front_right_wheel.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+          <ambient>0.0 0.0 0.0 1.0</ambient>
+        </material>
+      </visual>
+      <collision name='front_right_wheel_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/front_right_wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Rear Right Wheel -->
+    <link name='rear_right_wheel'>
+      <inertial>
+        <pose>5.91746743994204E-07 0.00865068531718727 4.89179091955894E-08 0 0 0</pose>
+        <mass>0.260404298477464</mass>
+        <inertia>
+          <ixx>0.000768916632775559</ixx>
+          <ixy>3.91036360372682E-09</ixy>
+          <ixz>-1.97450781846868E-08</ixz>
+          <iyy>0.00137090251739636</iyy>
+          <iyz>5.1794015532165E-10</iyz>
+          <izz>0.000769013902049739</izz>
+        </inertia>
+      </inertial>
+      <visual name='rear_right_wheel_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/rear_right_wheel.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+          <ambient>0.0 0.0 0.0 1.0</ambient>
+        </material>
+      </visual>
+      <collision name='rear_right_wheel_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/rear_right_wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Front Left Wheel -->
+    <link name='front_left_wheel'>
+      <inertial>
+        <pose>-5.43240281369872E-07 -0.0088383378086567 2.3961098227776E-07 0 0 0</pose>
+        <mass>0.260404298193649</mass>
+        <inertia>
+          <ixx>0.000768939223288773</ixx>
+          <ixy>3.52640785354548E-09</ixy>
+          <ixz>4.55730439449201E-08</ixz>
+          <iyy>0.00137090251681853</iyy>
+          <iyz>-1.76774536234723E-09</iyz>
+          <izz>0.000768991310917154</izz>
+        </inertia>
+      </inertial>
+      <visual name='front_left_wheel_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/front_left_wheel.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+          <ambient>0.0 0.0 0.0 1.0</ambient>
+        </material>
+      </visual>
+      <collision name='front_left_wheel_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/front_left_wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Rear Left Wheel -->
+    <link name='rear_left_wheel'>
+      <inertial>
+        <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
+        <mass>0.260404298330934</mass>
+        <inertia>
+          <ixx>0.000768924810397154</ixx>
+          <ixy>3.78629360408607E-09</ixy>
+          <ixz>3.34428239014459E-08</ixz>
+          <iyy>0.00137090251712043</iyy>
+          <iyz>-1.10616458599264E-09</iyz>
+          <izz>0.000769005724131009</izz>
+        </inertia>
+      </inertial>
+      <visual name='rear_left_wheel_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/rear_left_wheel.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>
+          <ambient>0.0 0.0 0.0 1.0</ambient>
+        </material>
+      </visual>
+      <collision name='rear_left_wheel_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://rahal_description_pkg/meshes/rear_left_wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joints -->
+    <!-- Front Right Wheel Joint -->
+    <joint name='front_right_wheel_joint' type='continuous'>
+      <pose relative_to='base_link'>0.18279 -0.243 -0.014153 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>front_right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+
+    <link name='lidar_link'>
+      <inertial>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0002</izz>
+        </inertia>
+      </inertial>
+      <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>package://rahal_description_pkg/meshes/lidar_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0 0.0 0.0 1</diffuse>
+          <ambient>0.0 0.0 0.0 1</ambient>
+        </material>
+      </visual>
+      <collision name='base_link_fixed_joint_lump__laser_link_collision_2'>
+        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>package://rahal_description_pkg/meshes/lidar_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <sensor name="lidar" type="gpu_lidar">
+        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>400</samples>
+              <resolution>1</resolution>
+              <min_angle>-1.5707</min_angle>
+              <max_angle>1.5707</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.15</min>
+            <max>25</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+        <gz_frame_id>lidar_link</gz_frame_id>
+        <topic>scan</topic>
+        <alwaysOn>1</alwaysOn>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+      </sensor>
+    </link>
+
+    <joint name='base_to_lidar_joint' type='fixed'>
+      <pose>0.23529 0 0.085747 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>lidar_link</child>
+    </joint>
+
+    <link name='camera_link'>
+      <inertial>
+        <pose>0.28252 0.0 0.029009 0 0 0</pose>
+        <mass>0.15</mass>
+        <inertia>
+        <ixx>0.00015</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.00015</iyy>
+        <iyz>0</iyz>
+        <izz>0.00015</izz>
+        </inertia>
+      </inertial>
+      <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
+        <pose>00.28252 0.0 0.029009 1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>package://rahal_description_pkg/meshes/realsenseD435.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 1 1</diffuse>
+          <ambient>0 0 1 1</ambient>
+        </material>
+      </visual>
+      <collision name='base_link_fixed_joint_lump__camera_link_collision_1'>
+        <pose>0.28252 0.0 0.029009 1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>package://rahal_description_pkg/meshes/realsenseD435.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="camera" type="camera">
+        <pose>0.28252 0.0 0.029009 0 0 0</pose>
+        <camera>
+          <horizontal_fov>1.367</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>200</far>
+          </clip>
+        </camera>
+        <!-- Set frame ID appropriately, typically 'camera_link' -->
+        <gz_frame_id>camera_link</gz_frame_id>
+        <always_on>1</always_on>
+        <update_rate>10</update_rate>
+        <visualize>1</visualize>
+        <topic>rgb_image</topic>
+      </sensor>
+    </link>
+    <joint name='base_to_camera_joint' type='fixed'>
+      <pose>0.28252 0.0 0.029009 1.57 0 1.57</pose>
+      <parent>base_link</parent>
+      <child>camera_link</child>
+    </joint>
+
+    <!-- Rear Right Wheel Joint -->
+    <joint name='rear_right_wheel_joint' type='continuous'>
+      <pose relative_to='base_link'>-0.17721 -0.24281 -0.014153 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>rear_right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Front Left Wheel Joint -->
+    <joint name='front_left_wheel_joint' type='continuous'>
+      <pose relative_to='base_link'>0.18279 0.243 -0.014153 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>front_left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Rear Left Wheel Joint -->
+    <joint name='rear_left_wheel_joint' type='continuous'>
+      <pose relative_to='base_link'>-0.17721 0.243 -0.014153 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>rear_left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Upper Link Joint -->
+    <joint name='upper_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>upper_Link</child>
+    </joint>
+ <plugin
+        filename="ignition-gazebo-diff-drive-system"
+        name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+        <right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>1.25</wheel_separation>
+        <wheel_radius>0.3</wheel_radius>
+        <odom_publish_frequency>1</odom_publish_frequency>
+        <max_linear_acceleration>1</max_linear_acceleration>
+        <min_linear_acceleration>-1</min_linear_acceleration>
+        <max_angular_acceleration>2</max_angular_acceleration>
+        <min_angular_acceleration>-2</min_angular_acceleration>
+        <max_linear_velocity>0.5</max_linear_velocity>
+        <min_linear_velocity>-0.5</min_linear_velocity>
+        <max_angular_velocity>1</max_angular_velocity>
+        <min_angular_velocity>-1</min_angular_velocity>
+      </plugin>
+  </model>
+</sdf>
