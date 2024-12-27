@@ -231,7 +231,7 @@
 
     <!-- Joints -->
     <!-- Front Right Wheel Joint -->
-    <joint name='front_right_wheel_joint' type='continuous'>
+    <joint name='front_right_wheel_joint' type='revolute'>
       <pose relative_to='base_link'>0.18279 -0.243 -0.014153 0 0 0</pose>
       <parent>base_link</parent>
       <child>front_right_wheel</child>
@@ -379,7 +379,7 @@
     </joint>
 
     <!-- Rear Right Wheel Joint -->
-    <joint name='rear_right_wheel_joint' type='continuous'>
+    <joint name='rear_right_wheel_joint' type='revolute'>
       <pose relative_to='base_link'>-0.17721 -0.24281 -0.014153 0 0 0</pose>
       <parent>base_link</parent>
       <child>rear_right_wheel</child>
@@ -397,7 +397,7 @@
     </joint>
 
     <!-- Front Left Wheel Joint -->
-    <joint name='front_left_wheel_joint' type='continuous'>
+    <joint name='front_left_wheel_joint' type='revolute'>
       <pose relative_to='base_link'>0.18279 0.243 -0.014153 0 0 0</pose>
       <parent>base_link</parent>
       <child>front_left_wheel</child>
@@ -415,7 +415,7 @@
     </joint>
 
     <!-- Rear Left Wheel Joint -->
-    <joint name='rear_left_wheel_joint' type='continuous'>
+    <joint name='rear_left_wheel_joint' type='revolute'>
       <pose relative_to='base_link'>-0.17721 0.243 -0.014153 0 0 0</pose>
       <parent>base_link</parent>
       <child>rear_left_wheel</child>
