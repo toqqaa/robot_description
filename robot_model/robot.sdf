@@ -208,7 +208,6 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
-        <position>1.0</position>
 
       </limit>
     </joint>
@@ -225,7 +224,6 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
-        <position>1.0</position>
 
       </limit>
     </joint>
@@ -242,7 +240,6 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
-        <position>1.0</position>
       </limit>
     </joint>
 
@@ -258,8 +255,6 @@
         <velocity>10</velocity>
         <lower>-1.57</lower>
         <upper>1.57</upper>
-        <position>1.0</position>
-
       </limit>
     </joint>
 
