@@ -260,7 +260,7 @@
 
 <link name='lidar_link'>
       <inertial>
-        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <pose>0.23529 0 0.1 0 0 0</pose>
         <mass>0.2</mass>
         <inertia>
           <ixx>0.0002</ixx>
@@ -272,7 +272,7 @@
         </inertia>
       </inertial>
       <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
-        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <pose>0.23529 0 0.1 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -294,7 +294,7 @@
         </geometry>
       </collision>
       <sensor name="lidar" type="gpu_lidar">
-        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <pose>0.23529 0 0.1 0 0 0</pose>
         <lidar>
           <scan>
             <horizontal>
@@ -319,7 +319,7 @@
     </link>
 
     <joint name='base_to_lidar_joint' type='fixed'>
-      <pose>0.23529 0 0.085747 0 0 0</pose>
+      <pose>0.23529 0 0.1 0 0 0</pose>
       <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
