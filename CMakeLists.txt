@@ -38,6 +38,9 @@ install(
     config/
   DESTINATION share/${PROJECT_NAME}/config
 )
+install(DIRECTORY meshes/
+  DESTINATION share/${PROJECT_NAME}/meshes)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
