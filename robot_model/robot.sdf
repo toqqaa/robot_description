@@ -255,11 +255,7 @@
         <upper>1.57</upper>
       </limit>
     </joint>
-<plugin
-      filename="gz-sim-sensors-system"
-      name="gz::sim::systems::Sensors">
-      <render_engine>ogre2</render_engine>
-    </plugin>
+
 
 
 <link name='lidar_link'>
