@@ -20,7 +20,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/base_link.STL</uri>
+            <uri>package://robot_description/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -33,7 +33,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/base_link.STL</uri>
+            <uri>package://robot_description/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -58,7 +58,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/upper_Link.STL</uri>
+            <uri>package://robot_description/meshes/upper_Link.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -71,7 +71,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/upper_Link.STL</uri>
+            <uri>package://robot_description/meshes/upper_Link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -96,7 +96,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/front_right_wheel.STL</uri>
+            <uri>package://robot_description/meshes/front_right_wheel.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -109,7 +109,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/front_right_wheel.STL</uri>
+            <uri>package://robot_description/meshes/front_right_wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -134,7 +134,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/rear_right_wheel.STL</uri>
+            <uri>package://robot_description/meshes/rear_right_wheel.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -147,7 +147,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/rear_right_wheel.STL</uri>
+            <uri>package://robot_description/meshes/rear_right_wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -172,7 +172,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/front_left_wheel.STL</uri>
+            <uri>package://robot_description/meshes/front_left_wheel.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -185,7 +185,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/front_left_wheel.STL</uri>
+            <uri>package://robot_description/meshes/front_left_wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -210,7 +210,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/rear_left_wheel.STL</uri>
+            <uri>package://robot_description/meshes/rear_left_wheel.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -223,7 +223,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://rahal_description_pkg/meshes/rear_left_wheel.STL</uri>
+            <uri>package://robot_description/meshes/rear_left_wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -267,7 +267,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>package://rahal_description_pkg/meshes/lidar_link.STL</uri>
+            <uri>package://robot_description/meshes/lidar_link.STL</uri>
           </mesh>
         </geometry>
         <material>
@@ -280,7 +280,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>package://rahal_description_pkg/meshes/lidar_link.STL</uri>
+            <uri>package://robot_description/meshes/lidar_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -333,7 +333,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>package://rahal_description_pkg/meshes/realsenseD435.dae</uri>
+            <uri>package://robot_description/meshes/realsenseD435.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -346,7 +346,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>package://rahal_description_pkg/meshes/realsenseD435.dae</uri>
+            <uri>package://robot_description/meshes/realsenseD435.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -438,22 +438,6 @@
       <parent>base_link</parent>
       <child>upper_Link</child>
     </joint>
- <plugin
-        filename="ignition-gazebo-diff-drive-system"
-        name="ignition::gazebo::systems::DiffDrive">
-        <left_joint>left_wheel_joint</left_joint>
-        <right_joint>right_wheel_joint</right_joint>
-        <wheel_separation>1.25</wheel_separation>
-        <wheel_radius>0.3</wheel_radius>
-        <odom_publish_frequency>1</odom_publish_frequency>
-        <max_linear_acceleration>1</max_linear_acceleration>
-        <min_linear_acceleration>-1</min_linear_acceleration>
-        <max_angular_acceleration>2</max_angular_acceleration>
-        <min_angular_acceleration>-2</min_angular_acceleration>
-        <max_linear_velocity>0.5</max_linear_velocity>
-        <min_linear_velocity>-0.5</min_linear_velocity>
-        <max_angular_velocity>1</max_angular_velocity>
-        <min_angular_velocity>-1</min_angular_velocity>
-      </plugin>
+ 
   </model>
 </sdf>
