@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sdf version='1.8'>
+<sdf version='1.9'>
   <model name='rahal_robot'>
     <!-- Base Link -->
     <link name='base_link'>
@@ -358,7 +358,7 @@
       name="gz::sim::systems::JointStatePublisher">
       <topic>joint_states</topic> <!--from <ros><remapping> -->
       <joint_name>rear_left_wheel_joint</joint_name>
-      <joint_name>wheel_right_joint</joint_name>
+      <joint_name>rear_right_wheel_joint</joint_name>
     </plugin>
 
 
