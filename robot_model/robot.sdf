@@ -295,7 +295,7 @@
           </mesh>
         </geometry>
       </collision>
-      <sensor name="lidar_link" type="gpu_lidar">
+      <sensor name="lidar_link" type="lidar">
         <gz_frame_id>lidar_link</gz_frame_id>
         <topic>scan</topic>
         <update_rate>30</update_rate>
