@@ -34,7 +34,6 @@ def generate_launch_description():
             pkg_project_description,
             'worlds',
             'world.sdf'
-            'turtlebot3_world.sdf',
         ])}.items(),
     )
 
