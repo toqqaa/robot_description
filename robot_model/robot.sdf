@@ -41,7 +41,7 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
-      <pose relative_to='base_link'>0.15 0.1 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0.18279 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -80,7 +80,7 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-      <pose relative_to='base_link'>0.15 -0.1 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0.18279 -0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -119,7 +119,7 @@
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
-      <pose relative_to='base_link'>-0.15 0.1 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>-0.17721 -0.24281 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -158,7 +158,7 @@
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
-      <pose relative_to='base_link'>-0.15 -0.1 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>-0.17721 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -199,7 +199,7 @@
     <joint name='front_left_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>front_left_wheel</child>
-      <pose>0.15 0.1 0 0 0 0</pose>
+      <pose>0.18279 0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
       </axis>
@@ -214,7 +214,7 @@
     <joint name='front_right_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>front_right_wheel</child>
-      <pose>0.15 -0.1 0 0 0 0</pose>
+      <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
       </axis>
@@ -229,7 +229,7 @@
     <joint name='rear_left_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rear_left_wheel</child>
-      <pose>-0.15 0.1 0 0 0 0</pose>
+      <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
       </axis>
@@ -244,7 +244,7 @@
     <joint name='rear_right_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rear_right_wheel</child>
-      <pose>-0.15 -0.1 0 0 0 0</pose>
+      <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
       </axis>
