@@ -29,29 +29,16 @@ def generate_launch_description():
     # Setup to launch the simulator and Gazebo world
     gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
+            os.path.join(pkg_ros_gz_sim, 'launch', 'robot_launch.py')),
         launch_arguments={'gz_args': PathJoinSubstitution([
             pkg_project_description,
             'worlds',
             'world.sdf'
         ])}.items(),
     )
-    # Static TF base_link -> mono_camera
-    # .15 0 .25 0 0 1.5707
-    cam_x = 0.1284 # 0.05
-    cam_y = 0.0
-    cam_z = 0.07444 #0.15 
-    cam_roll = radians(-90.0)
-    cam_pitch = 0.0
-    cam_yaw = radians(-90.0)
-    cam_tf_node = Node(
-        package='tf2_ros',
-        name='base2depth_tf_node',
-        executable='static_transform_publisher',
-        # arguments=[str(cam_x), str(cam_y), str(cam_z), str(cam_yaw), str(cam_pitch), str(cam_roll), 'base_link', 'camera_link'],
-        arguments=[str(cam_x), str(cam_y), str(cam_z), str(cam_yaw), str(cam_pitch), str(cam_roll), 'camera_link', 'optical_camera_link'],
+
         
-    )
+    
     # Takes the description and joint angles as inputs and publishes the 3D poses of the robot links
     robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -79,6 +66,14 @@ def generate_launch_description():
         }],
         output='screen'
     )
+
+    bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=['/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan'],
+        output='screen'
+    )
+
     
     rviz_node = Node(
         package='rviz2',
