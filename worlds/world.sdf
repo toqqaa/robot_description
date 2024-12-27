@@ -151,7 +151,12 @@
       <uri>model://robot_description/models/robot.sdf</uri>
     </include> 
     
- 
+  <model name="turtlebot3_world">
+      <static>1</static>
+      <include>
+        <uri>model://turtlebot3_world</uri>
+      </include>
+    </model>
     <scene>
       <shadows>false</shadows>
     </scene>
