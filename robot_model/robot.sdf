@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sdf version='1.11'>
+<sdf version='1.10'>
   <model name='rahal_robot'>
     <!-- Base Link -->
     <link name='base_link'>
