@@ -195,7 +195,7 @@
     <joint name='front_left_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>front_left_wheel</child>
-      <pose>0.18279 0.243 -0.014153 0 0 0</pose>
+      <!-- <pose>0.18279 0.243 -0.014153 0 0 0</pose> -->
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
@@ -207,7 +207,7 @@
     <joint name='front_right_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>front_right_wheel</child>
-      <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
+      <!-- <pose>0.18279 -0.243 -0.014153 0 0 0</pose> -->
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
@@ -219,7 +219,7 @@
     <joint name='rear_left_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rear_left_wheel</child>
-      <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
+      <!-- <pose>-0.17721 0.243 -0.014153 0 0 0</pose> -->
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
@@ -231,7 +231,7 @@
     <joint name='rear_right_wheel_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rear_right_wheel</child>
-      <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose>
+      <!-- <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose> -->
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
