@@ -203,9 +203,12 @@
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
-     <limit>
-          <effort>20</effort> 
-        </limit>
+      <limit>
+        <effort>10</effort>
+        <velocity>10</velocity>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
     </joint>
 
     <joint name='front_right_wheel_joint' type='revolute'>
@@ -215,9 +218,12 @@
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
-     <limit>
-          <effort>20</effort> 
-        </limit>
+      <limit>
+        <effort>10</effort>
+        <velocity>10</velocity>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
     </joint>
 
     <joint name='rear_left_wheel_joint' type='revolute'>
@@ -227,9 +233,12 @@
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
-        <limit>
-          <effort>20</effort> 
-        </limit>
+      <limit>
+        <effort>10</effort>
+        <velocity>10</velocity>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
     </joint>
 
     <joint name='rear_right_wheel_joint' type='revolute'>
@@ -240,8 +249,11 @@
         <xyz>0 1 0</xyz>
       </axis>
       <limit>
-          <effort>20</effort> 
-        </limit>
+        <effort>10</effort>
+        <velocity>10</velocity>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
     </joint>
 
 
