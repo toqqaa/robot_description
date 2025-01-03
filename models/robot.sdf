@@ -80,7 +80,7 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='front_right_wheel_joint'>0.18279 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
