@@ -41,7 +41,7 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
-             <pose relative_to='front_left_wheel_joint'>0 0 0 0 0 0</pose>
+          <pose >0.18279 0.243 -0.014153 0 0 0</pose>
 
       <inertial>
       <pose>0 0 0 0 0 0</pose>
@@ -81,7 +81,7 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-         <pose relative_to='front_right_wheel_joint'>0 0 0 0 0 0</pose>
+      <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
 
       <inertial>
       <pose>0 0 0 0 0 0</pose>
@@ -121,7 +121,7 @@
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
-     <pose relative_to='rear_left_wheel_joint'>0 0 0 0 0 0</pose>
+          <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
 
       <inertial>
       <pose>0 0 0 0 0 0</pose>
@@ -161,7 +161,7 @@
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
-          <pose relative_to='rear_right_wheel_joint'>0 0 0 0 0 0</pose>
+      <pose >-0.17721 -0.24281 -0.014153 0 0 0</pose>
       <inertial>
       <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -339,13 +339,13 @@
 </plugin>
 
 
-   <!-- <plugin filename="gz-sim-joint-state-publisher-system"
+   <plugin filename="gz-sim-joint-state-publisher-system"
         name="gz::sim::systems::JointStatePublisher">
     <joint_name>front_left_wheel_joint</joint_name>
     <joint_name>front_right_wheel_joint</joint_name>
     <joint_name>rear_left_wheel_joint</joint_name>
     <joint_name>rear_right_wheel_joint</joint_name>
-</plugin> -->
+</plugin>
 
 
   </model>
