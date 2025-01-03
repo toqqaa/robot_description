@@ -41,10 +41,9 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
-          <pose >0.18279 0.243 -0.014153 0 0 0</pose>
-
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
@@ -56,7 +55,7 @@
         </inertia>
       </inertial>
       <visual name='front_left_wheel_visual'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -69,7 +68,7 @@
         </material>
       </visual>
       <collision name='front_left_wheel_collision'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -81,10 +80,9 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-      <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
-
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
@@ -96,7 +94,7 @@
         </inertia>
       </inertial>
       <visual name='front_right_wheel_visual'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -109,7 +107,7 @@
         </material>
       </visual>
       <collision name='front_right_wheel_collision'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -121,10 +119,9 @@
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
-          <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
-
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
@@ -136,7 +133,7 @@
         </inertia>
       </inertial>
       <visual name='rear_left_wheel_visual'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -149,7 +146,7 @@
         </material>
       </visual>
       <collision name='rear_left_wheel_collision'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -161,9 +158,9 @@
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
-      <pose >-0.17721 -0.24281 -0.014153 0 0 0</pose>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>-5.92307982660856E-07 0.00883833779366749 -4.20445877558073E-08 0 0 0</pose>
         <mass>0.260404298470105</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
@@ -175,7 +172,7 @@
         </inertia>
       </inertial>
       <visual name='rear_right_wheel_visual'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -188,7 +185,7 @@
         </material>
       </visual>
       <collision name='rear_right_wheel_collision'>
-      <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -200,61 +197,57 @@
 
     <!-- Joints for connecting links -->
     <joint name='front_left_wheel_joint' type='revolute'>
-          <pose relative_to='base_link'>0.18279 0.243 -0.014153 0 0 0</pose>
-
       <parent>base_link</parent>
       <child>front_left_wheel</child>
+      <pose>0.18279 0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
-       <limit>
-        <effort>20</effort> 
+     <limit>
+          <effort>20</effort> 
         </limit>
     </joint>
 
     <joint name='front_right_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>0.18279 -0.243 -0.014153 0 0 0</pose>
-
       <parent>base_link</parent>
       <child>front_right_wheel</child>
+      <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
-      <limit>
-        <effort>20</effort> 
+     <limit>
+          <effort>20</effort> 
         </limit>
     </joint>
 
     <joint name='rear_left_wheel_joint' type='revolute'>
-          <pose relative_to='base_link'>-0.17721 0.243 -0.014153 0 0 0</pose>
-
-
       <parent>base_link</parent>
       <child>rear_left_wheel</child>
-]      <axis>
-        <xyz>0 1 0</xyz>
-      </axis>
-      <limit>
-        <effort>20</effort> 
-        </limit>
-    </joint>
-
-    <joint name='rear_right_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>-0.17721 -0.24281 -0.014153 0 0 0</pose>
-      <parent>base_link</parent>
-      <child>rear_right_wheel</child>
+      <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
         <limit>
-        <effort>20</effort> 
+          <effort>20</effort> 
+        </limit>
+    </joint>
+
+    <joint name='rear_right_wheel_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rear_right_wheel</child>
+      <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+      <limit>
+          <effort>20</effort> 
         </limit>
     </joint>
 
 
 <link name='lidar_link'>
       <inertial>
-        <!-- <pose>0.23529 0 0.2 0 0 0</pose> -->
+        <pose>0.23529 0 0.2 0 0 0</pose>
         <mass>0.2</mass>
         <inertia>
           <ixx>0.0002</ixx>
@@ -266,7 +259,7 @@
         </inertia>
       </inertial>
       <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
-        <!-- <pose>0.23529 0 0.2  0 0 0</pose> -->
+        <pose>0.23529 0 0.2  0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -338,15 +331,14 @@
     <topic>/cmd_vel</topic>
 </plugin>
 
+   
 
-   <plugin filename="gz-sim-joint-state-publisher-system"
+<plugin filename="gz-sim-joint-state-publisher-system"
         name="gz::sim::systems::JointStatePublisher">
     <joint_name>front_left_wheel_joint</joint_name>
     <joint_name>front_right_wheel_joint</joint_name>
     <joint_name>rear_left_wheel_joint</joint_name>
     <joint_name>rear_right_wheel_joint</joint_name>
 </plugin>
-
-
   </model>
 </sdf>
