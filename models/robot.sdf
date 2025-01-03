@@ -343,7 +343,7 @@
       <child_frame_id>base_footprint</child_frame_id> <!-- from <robot_base_frame> -->
       <odom_publisher_frequency>30</odom_publisher_frequency> <!-- from <update_rate>-->
 
-      <tf_topic>/tf</tf_topic> <!-- Short topic name for tf output 
+      <tf_topic>/tf</tf_topic> 
       <topic>/cmd_vel</topic>
       </plugin>
 
