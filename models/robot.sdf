@@ -296,8 +296,7 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
+     
       </limit>
     </joint>
 
@@ -311,8 +310,7 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
+
       </limit>
     </joint>
 
@@ -326,8 +324,7 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
+  
       </limit>
     </joint>
 
@@ -341,8 +338,7 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
+
       </limit>
     </joint>
 
