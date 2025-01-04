@@ -24,8 +24,8 @@
           </mesh>
         </geometry>
         <material>
-          <diffuse>0.2 0.2 0.2 1.0</diffuse>
-          <ambient>0.2 0.2 0.2 1.0</ambient>
+         <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
         </material>
       </visual>
       <collision name='base_link_collision'>
@@ -313,8 +313,8 @@
             <horizontal>
               <samples>2800</samples>
               <resolution>1</resolution>
-              <min_angle>-1.5707</min_angle>
-              <max_angle>1.5707</max_angle>
+              <min_angle>-2.356194</min_angle>
+              <max_angle>2.356194</max_angle>
             </horizontal>
             <vertical>
               <samples>1</samples>
@@ -363,19 +363,19 @@
     <pose>0 0 0 0 0 0</pose>
     <geometry>
       <box>
-        <size>0.025 0.09 0.025</size>
+        <size>0.025 0.06 0.025</size>
       </box>
     </geometry>
     <material>
-      <diffuse>0 0 1 1</diffuse>
-      <ambient>0 0 1 1</ambient>
+      <diffuse>1.0 1.0 1.0 1.0</diffuse>
+      <ambient>1.0 1.0 1.0 1.0</ambient>
     </material>
   </visual>
   <collision name='cam_collision'>
     <pose>0 0 0 0 0 0</pose>
     <geometry>
       <box>
-        <size>0.0250.09 0.025</size>
+        <size>0.025 0.06 0.025</size>
       </box>
     </geometry>
   </collision>
