@@ -67,15 +67,16 @@ def generate_launch_description():
         output='screen'
     )
 
-#     spawn_robot_node = Node(
-#     package='ros_gz_sim',
-#     executable= 'create',
-#     arguments= [
-#         '-name', 'rahal_robot',
-#         '-topic', 'robot_description',
-#     ],
-#     output = 'screen'
-# )
+    spawn_robot_node = Node(
+        package='ros_gz_sim',
+        executable='create',
+        arguments=[
+            '-name', 'rahal_robot',
+            '-topic', 'robot_description',
+            '-z', '0.5'  # Add this to start slightly above ground
+        ],
+        output='screen'
+)
     
 
     
@@ -92,7 +93,7 @@ def generate_launch_description():
         robot_state_publisher,
         rviz_node,
         joint_state_publisher_node,
-        # spawn_robot_node
+        spawn_robot_node
         # joint_state_publisher_gui_node
     ])
 

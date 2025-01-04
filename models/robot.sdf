@@ -43,8 +43,8 @@
     <link name='front_left_wheel'>
       <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-        <pose>0 0 0 0 0 0</pose>
-        <mass>0.260404298470105</mass>
+        <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
+        <mass>0.5</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
           <ixy>-3.91608887242284E-09</ixy>
@@ -82,8 +82,8 @@
     <link name='front_right_wheel'>
       <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-        <pose>0 0 0 0 0 0</pose>
-        <mass>0.260404298470105</mass>
+        <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
+        <mass>0.5</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
           <ixy>-3.91608887242284E-09</ixy>
@@ -121,8 +121,8 @@
     <link name='rear_left_wheel'>
       <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-        <pose>0 0 0 0 0 0</pose>
-        <mass>0.260404298470105</mass>
+        <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
+        <mass>0.5</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
           <ixy>-3.91608887242284E-09</ixy>
@@ -160,8 +160,8 @@
     <link name='rear_right_wheel'>
       <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
-        <pose>0 0 0 0 0 0</pose>
-        <mass>0.260404298470105</mass>
+        <pose>-5.77441466698136E-07 -0.0088383378011283 1.38298648810764E-07 0 0 0</pose>
+        <mass>0.5</mass>
         <inertia>
           <ixx>0.000768916188073183</ixx>
           <ixy>-3.91608887242284E-09</ixy>
@@ -206,8 +206,6 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
       </limit>
     </joint>
 
@@ -221,8 +219,6 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
       </limit>
     </joint>
 
@@ -236,8 +232,6 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
       </limit>
     </joint>
 
@@ -251,8 +245,6 @@
       <limit>
         <effort>10</effort>
         <velocity>10</velocity>
-        <lower>-1.57</lower>
-        <upper>1.57</upper>
       </limit>
     </joint>
 
@@ -271,7 +263,7 @@
         </inertia>
       </inertial>
       <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
-        <pose>0.23529 0 0.3  0 0 0</pose>
+        <pose>0.23529 0 0.5  0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -324,7 +316,7 @@
     </link>
 
     <joint name='base_to_lidar_joint' type='fixed'>
-      <pose>0.23529 0 0.3 0 0 0</pose>
+      <pose>0.23529 0 0.5 0 0 0</pose>
       <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
