@@ -41,7 +41,7 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
-      <pose relative_to='base_link'>0.18279 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -55,7 +55,7 @@
         </inertia>
       </inertial>
       <visual name='front_left_wheel_visual'>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0.18279 0.243 -0.014153 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -74,35 +74,13 @@
             <scale>1 1 1</scale>
             <uri>package://robot_description/meshes/front_left_wheel.STL</uri>
           </mesh>
-            <surface>
-          <!-- This friction pamareter don't contain reliable data!! -->
-          <friction>
-            <ode>
-              <mu>100000.0</mu>
-              <mu2>100000.0</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0.0</slip1>
-              <slip2>0.0</slip2>
-            </ode>
-          </friction>
-          <contact>
-            <ode>
-              <soft_cfm>0</soft_cfm>
-              <soft_erp>0.2</soft_erp>
-              <kp>1e+5</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth>
-            </ode>
-          </contact>
-        </surface>
         </geometry>
       </collision>
     </link>
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-      <pose relative_to='base_link'>0.18279 -0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -116,7 +94,7 @@
         </inertia>
       </inertial>
       <visual name='front_right_wheel_visual'>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -135,35 +113,13 @@
             <scale>1 1 1</scale>
             <uri>package://robot_description/meshes/front_right_wheel.STL</uri>
           </mesh>
-            <surface>
-          <!-- This friction pamareter don't contain reliable data!! -->
-          <friction>
-            <ode>
-              <mu>100000.0</mu>
-              <mu2>100000.0</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0.0</slip1>
-              <slip2>0.0</slip2>
-            </ode>
-          </friction>
-          <contact>
-            <ode>
-              <soft_cfm>0</soft_cfm>
-              <soft_erp>0.2</soft_erp>
-              <kp>1e+5</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth>
-            </ode>
-          </contact>
-        </surface>
         </geometry>
       </collision>
     </link>
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
-      <pose relative_to='base_link'>-0.17721 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -177,7 +133,7 @@
         </inertia>
       </inertial>
       <visual name='rear_left_wheel_visual'>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -196,35 +152,13 @@
             <scale>1 1 1</scale>
             <uri>package://robot_description/meshes/rear_left_wheel.STL</uri>
           </mesh>
-            <surface>
-          <!-- This friction pamareter don't contain reliable data!! -->
-          <friction>
-            <ode>
-              <mu>100000.0</mu>
-              <mu2>100000.0</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0.0</slip1>
-              <slip2>0.0</slip2>
-            </ode>
-          </friction>
-          <contact>
-            <ode>
-              <soft_cfm>0</soft_cfm>
-              <soft_erp>0.2</soft_erp>
-              <kp>1e+5</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth>
-            </ode>
-          </contact>
-        </surface>
         </geometry>
       </collision>
     </link>
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
-      <pose relative_to='base_link'>-0.17721 -0.24281 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -238,15 +172,14 @@
         </inertia>
       </inertial>
       <visual name='rear_right_wheel_visual'>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
             <uri>package://robot_description/meshes/rear_right_wheel.STL</uri>
           </mesh>
-          
         </geometry>
-
+        
         <material>
           <diffuse>0.0 0.0 0.0 1.0</diffuse>
           <ambient>0.0 0.0 0.0 1.0</ambient>
@@ -259,28 +192,6 @@
             <scale>1 1 1</scale>
             <uri>package://robot_description/meshes/rear_right_wheel.STL</uri>
           </mesh>
-            <surface>
-          <!-- This friction pamareter don't contain reliable data!! -->
-          <friction>
-            <ode>
-              <mu>100000.0</mu>
-              <mu2>100000.0</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0.0</slip1>
-              <slip2>0.0</slip2>
-            </ode>
-          </friction>
-          <contact>
-            <ode>
-              <soft_cfm>0</soft_cfm>
-              <soft_erp>0.2</soft_erp>
-              <kp>1e+5</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth>
-            </ode>
-          </contact>
-        </surface>
         </geometry>
       </collision>
     </link>
@@ -495,9 +406,15 @@
     <right_joint>rear_right_wheel_joint</right_joint>
     <wheel_separation>0.45</wheel_separation> 
     <wheel_radius>0.09</wheel_radius> 
-    <child_frame_id>base_link</child_frame_id>  <!-- Changed from base_footprint to base_link -->
-    <tf_topic>/tf</tf_topic> 
     <topic>/cmd_vel</topic>
+     <max_linear_acceleration>1</max_linear_acceleration>
+        <min_linear_acceleration>-1</min_linear_acceleration>
+        <max_angular_acceleration>2</max_angular_acceleration>
+        <min_angular_acceleration>-2</min_angular_acceleration>
+        <max_linear_velocity>0.5</max_linear_velocity>
+        <min_linear_velocity>-0.5</min_linear_velocity>
+        <max_angular_velocity>1</max_angular_velocity>
+        <min_angular_velocity>-1</min_angular_velocity>
 </plugin>
 
    
