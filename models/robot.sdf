@@ -282,7 +282,7 @@
           <izz>0.0002</izz>
         </inertia>
       </inertial>
-      <visual name='base_link_fixed_joint_lump__laser_link_visual_2'>
+      <visual name='lidar_visual'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
@@ -295,7 +295,7 @@
           <ambient>0.0 0.0 0.0 1</ambient>
         </material>
       </visual>
-      <collision name='base_link_fixed_joint_lump__laser_link_collision_2'>
+      <collision name='lidar_collison'>
         <pose>0 0 0  0 0 0</pose>
         <geometry>
           <mesh>
@@ -336,7 +336,7 @@
     </link>
 
     <joint name='base_to_lidar_joint' type='fixed'>
-      <pose>0.23529 0 0.085747 0 0 0</pose>
+      <!-- <pose>0.23529 0 0.085747 0 0 0</pose> -->
       <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
@@ -346,8 +346,10 @@
 
 
     <link name='camera_link'>
+          <pose relative_to='base_link'>0.28252 0.0 0.029009 0 0 0</pose>  <!-- Adjusted pose -->
+
       <inertial>
-        <pose>0.1284 0 0.07444 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <mass>0.15</mass>
         <inertia>
         <ixx>0.00015</ixx>
@@ -358,8 +360,8 @@
         <izz>0.00015</izz>
         </inertia>
       </inertial>
-      <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
-        <pose>0.1284 0 0.07444 1.57 0 1.57</pose>
+      <visual name='cam_visual'>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -371,8 +373,8 @@
           <ambient>0 0 1 1</ambient>
         </material>
       </visual>
-      <collision name='base_link_fixed_joint_lump__camera_link_collision_1'>
-        <pose>0.1284 0 0.07444 1.57 0 1.57</pose>
+      <collision name='cam_collison'>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -382,7 +384,7 @@
       </collision>
 
       <sensor name="camera" type="camera">
-        <pose>0.1284 0 0.07444 0 0 0</pose>
+        <pose>0.28252 0.0 0.029009 0 0 0</pose>
         <camera>
           <horizontal_fov>1.367</horizontal_fov>
           <image>
@@ -403,7 +405,7 @@
       </sensor>
     </link>
     <joint name='base_to_camera_joint' type='fixed'>
-      <pose>0.1284 0 0.07444 1.57 0 1.57</pose>
+      <!-- <pose>0.1284 0 0.07444 1.57 0 1.57</pose> -->
       <parent>base_link</parent>
       <child>camera_link</child>
     </joint>
