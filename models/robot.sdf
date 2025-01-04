@@ -405,10 +405,7 @@
     <right_joint>rear_right_wheel_joint</right_joint>
     <wheel_separation>0.45</wheel_separation> 
     <wheel_radius>0.09</wheel_radius> 
-    <odom_topic>odom</odom_topic>
-    <frame_id>odom</frame_id>
     <child_frame_id>base_link</child_frame_id>  <!-- Changed from base_footprint to base_link -->
-    <odom_publisher_frequency>30</odom_publisher_frequency>
     <tf_topic>/tf</tf_topic> 
     <topic>/cmd_vel</topic>
 </plugin>
