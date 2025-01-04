@@ -346,7 +346,7 @@
 
 
     <link name='camera_link'>
-          <pose relative_to='base_link'>0.28252 0.0 0.029009 0 1.57 1.57</pose>  <!-- Adjusted pose -->
+          <pose relative_to='base_link'>0.28252 0.0 0.029009 0 0 -1.57</pose>  <!-- Adjusted pose -->
 
       <inertial>
         <pose>0 0 0 0 0 0</pose>
