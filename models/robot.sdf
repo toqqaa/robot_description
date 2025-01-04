@@ -258,7 +258,7 @@
 
 
 <link name='lidar_link'>
-        <pose>0.23529 0 0.085747 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
 
       <inertial>
         <pose>0 0 0 0 0 0</pose>
