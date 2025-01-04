@@ -101,11 +101,11 @@
               <size>100 100</size>
             </plane>
           </geometry>
-          <material>
-            <ambient>0.5 0.5 1 1</ambient>
-            <diffuse>0.7 0.7 1 1</diffuse>
-            <specular>0.6 0.6 1 1</specular>
-            </material>
+         <material>
+            <ambient>0.8 0.5 1.0 1</ambient>
+            <diffuse>0.8 0.5 1.0 1</diffuse>
+            <specular>0.8 0.5 1.0 1</specular>
+        </material>
         </visual>
         <pose>0 0 0 0 -0 0</pose>
         <inertial>
@@ -147,7 +147,7 @@
     
     
     <include>
-      <pose>-0.1 0 0.09 0 0 0</pose>
+      <pose>-0.2 0 0.09 0 0 0</pose>
       <uri>model://robot_description/models/robot.sdf</uri>
     </include> 
     <include>
