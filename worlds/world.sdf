@@ -102,9 +102,9 @@
             </plane>
           </geometry>
           <material>
-            <ambient>0.8 0.8 0.8 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
-            <specular>0.8 0.8 0.8 1</specular>
+            <ambient>0 0.8 0.8 1</ambient>
+            <diffuse>0 0.8 0.8 1</diffuse>
+            <specular>0 0.8 0.8 1</specular>
           </material>
         </visual>
         <pose>0 0 0 0 -0 0</pose>
@@ -147,7 +147,7 @@
     
     
     <include>
-      <pose>0 -0.7 0.04 0 0 0</pose>
+      <pose>0 0 0.04 0 0 0</pose>
       <uri>model://robot_description/models/robot.sdf</uri>
     </include> 
     
