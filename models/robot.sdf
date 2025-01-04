@@ -41,7 +41,7 @@
 
     <!-- Front Left Wheel -->
     <link name='front_left_wheel'>
-      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose >0.18279 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -80,7 +80,7 @@
 
     <!-- Front Right Wheel -->
     <link name='front_right_wheel'>
-      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose >0.18279 -0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -119,7 +119,7 @@
 
     <!-- Rear Left Wheel -->
     <link name='rear_left_wheel'>
-      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose >-0.17721 0.243 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
@@ -158,7 +158,7 @@
 
     <!-- Rear Right Wheel -->
     <link name='rear_right_wheel'>
-      <pose relative_to='base_link'>0 0 0 0 0 0</pose>  <!-- Adjusted pose -->
+      <pose >-0.17721 -0.24281 -0.014153 0 0 0</pose>  <!-- Adjusted pose -->
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.260404298470105</mass>
