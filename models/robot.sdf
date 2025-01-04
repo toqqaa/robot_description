@@ -55,7 +55,7 @@
         </inertia>
       </inertial>
       <visual name='front_left_wheel_visual'>
-        <pose>0.18279 0.243 -0.014153 0 0 0</pose>
+        <!-- <pose>0.18279 0.243 -0.014153 0 0 0</pose> -->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -94,7 +94,7 @@
         </inertia>
       </inertial>
       <visual name='front_right_wheel_visual'>
-        <pose>0.18279 -0.243 -0.014153 0 0 0</pose>
+        <!-- <pose>0.18279 -0.243 -0.014153 0 0 0</pose> -->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -133,7 +133,7 @@
         </inertia>
       </inertial>
       <visual name='rear_left_wheel_visual'>
-        <pose>-0.17721 0.243 -0.014153 0 0 0</pose>
+        <!-- <pose>-0.17721 0.243 -0.014153 0 0 0</pose> -->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -172,7 +172,7 @@
         </inertia>
       </inertial>
       <visual name='rear_right_wheel_visual'>
-        <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose>
+        <!-- <pose>-0.17721 -0.24281 -0.014153 0 0 0</pose> -->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
